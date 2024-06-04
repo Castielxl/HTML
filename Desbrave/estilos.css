@@ -1,0 +1,253 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+:root {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p, a, strong {
+  font-family: Arimo, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+header {
+    background-color: #111827;
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+#hero-image {
+  height: 36rem;
+  background-image: url("imagens/borborema.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+}
+
+#hero-content {
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: white;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#hero-content h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#hero-content p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+main.container {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+main.container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.pontos-turisticos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+
+.ponto-turistico {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #F3F2F2;
+  border: 1px solid #E5E7EB;
+}
+
+.ponto-turistico img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.ponto-turistico div {
+  padding: 1.5rem;
+}
+
+.ponto-turistico h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.ponto-turistico p {
+  color: #4B5563;
+  margin-bottom: 2rem;
+}
+
+.ponto-turistico a {
+  display: block;
+  background-color: #000;
+  color: #FFF;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ponto-turistico a:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.ponto-turistico-detalhado img {
+  max-width: 36rem;
+  height: auto;
+  object-fit: auto;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+.ponto-turistico-detalhado p {
+  margin-bottom: 1rem;
+  initial-letter: 2rem;
+}
+
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 425px) {
+  header div.container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pontos-turisticos{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pontos-turisticos{
+    grid-template-columns: 1fr
+  }
+}

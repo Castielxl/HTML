@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Perfil na plataforma</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="seu nome" autofocus required/>
+        <br/> <br/>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Seu e-mail"/>
+        <br> <br>
+
+        <label>Senha</label>
+        <input type="password" placeholder="Insira sua senha">
+
+        <br> <br>
+        <Label>Telefone</Label>
+        <input type="tel" placeholder="99 9999-9999">
+        <br> <br>
+
+        <label>Gênero</label>
+        <input type="radio" name="genero" value="M"/> <label>Masculino <input type="radio" name="genero" value="F"/> <Label>Feminino</Label>
+            <br><br>
+
+        <label>Data de nascimento</label>
+        <input type="date">
+        <br><br>
+
+        <label> País </label>
+        <select required name="pais">
+            <option value=""> selecione uma opção</option>
+            <option value="br">Brasil</option>
+            <option value="cr"> Camarões</option>
+            <OPtion value="eq"> Equador</OPtion>
+            <option value="fd"> Finlandia</option>
+            <option value="nz"> Nova Zelandia</option>
+        </select>
+        <br> <br>
+
+        <label>Preferências:</label>
+        <input type="checkbox">Música
+        <input type="checkbox">Esportes
+        <input type="checkbox">tecnologia
+        <br><br>
+
+        <label>Sobre</label>
+        <textarea cols="30" rows="8" style="resize: none;"placeholder="escreva sobre vôce"></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+p {color: red;}
+h1{text-align:center}
+#paragrafo1 {color: blue;}
+.green-text {color: green;}
+h1.green-text{text-align:center}
+h1 {font-weight: normal; background-color: rgb(171, 219, 190);}
+p {background-color: rgb(171, 219, 190);}
+*{font-size: 20px}

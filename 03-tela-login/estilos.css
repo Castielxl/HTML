@@ -1,0 +1,43 @@
+body{background-color: hsl(240, 5%, 7%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100vh;
+}
+form{background-color: #252533;
+padding: 64px;
+display: flex;
+flex-direction: column;
+width: 100%;
+border-radius: 10px;
+max-width: 480px;
+margin: 0 auto;
+label{color: #ffffff;}
+}
+
+
+label{
+    color: blue;
+}
+
+input{
+    background-color: #121214;
+    border-width: 1px;
+    border-style:solid;
+    margin-bottom: 15px;
+    border-color: black;
+    border-radius: 15px;
+    padding: 15px;
+    color: black;
+}
+
+.botao{
+    transition: all 2s ease;
+    padding: 15px 0;
+    background-color: blue;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: blueviolet;
+}

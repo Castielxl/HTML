@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+#cabecalho{
+    background-color: red;
+    color: aliceblue;
+    padding: 32px;
+}
+
+#cabecalho h1{
+    margin: 0;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container{
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+#lista-pokemons{
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+.pokemon{
+    width: 275px;
+   /* float: left; */
+}
+
+.pokemon img{
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.pokemon p.n{
+    font-weight: bold;
+    color: #919191;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+.nomep{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+.pokemon div.lista-tipos{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.pokemon div.lista-tipos{
+}
+
+.tipo{
+    width: 74px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px;
+}
+
+.planta{
+    background-color: #9bcc50;
+}
+
+.venenoso{
+    background-color: #b97fc9;
+    color: white;
+}
+
+.Fogo{
+    background-color: #FD7D24;
+    color: black
+}
+.voador{
+    background-image: -webkit-linear-gradient(90deg,  #BDB9B8 50%,#3DC7EF 50%);
+}
+.agua{
+    background-color: #4592C4;
+    color: black;
+}
+.bug{
+    background-color: #729f3f;
+    color: black;
+}
